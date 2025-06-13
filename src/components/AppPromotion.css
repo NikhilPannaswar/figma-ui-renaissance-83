@@ -1,0 +1,193 @@
+
+.app-promotion {
+  background-color: rgba(164, 191, 134, 1);
+  align-self: center;
+  width: 1321px;
+  max-width: 100%;
+  margin-top: 237px;
+  padding-left: 76px;
+  border-radius: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+@media (max-width: 768px) {
+  .app-promotion {
+    margin-top: 40px;
+    padding-left: 20px;
+  }
+}
+
+.app-promotion-container {
+  gap: 20px;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .app-promotion-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.app-promotion-content {
+  width: 41%;
+}
+
+@media (max-width: 768px) {
+  .app-promotion-content {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.app-promotion-text {
+  z-index: 10;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+  .app-promotion-text {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.app-promotion-title {
+  color: rgba(15, 46, 20, 1);
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 60px;
+}
+
+@media (max-width: 768px) {
+  .app-promotion-title {
+    font-size: 32px;
+    line-height: 56px;
+  }
+}
+
+.app-promotion-title-italic {
+  font-family: 'Playfair Display', -apple-system, Roboto, Helvetica, sans-serif;
+  font-style: italic;
+  color: rgba(15, 46, 20, 1);
+}
+
+.app-promotion-description {
+  color: black;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 27px;
+  margin-right: 25px;
+  margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+  .app-promotion-description {
+    margin-right: 10px;
+  }
+}
+
+.app-promotion-buttons {
+  margin-top: 18px;
+}
+
+@media (max-width: 768px) {
+  .app-promotion-buttons {
+    max-width: 100%;
+  }
+}
+
+.app-store-container {
+  gap: 20px;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .app-store-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.app-store-button {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .app-store-button {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.app-store-image {
+  aspect-ratio: 3.39;
+  object-fit: contain;
+  width: 200px;
+  max-width: 100%;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+@media (max-width: 768px) {
+  .app-store-image {
+    margin-top: 40px;
+  }
+}
+
+.google-play-button {
+  width: 50%;
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .google-play-button {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.google-play-image {
+  aspect-ratio: 1;
+  object-fit: contain;
+  width: 212px;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .google-play-image {
+    margin-top: 28px;
+  }
+}
+
+.app-promotion-image-container {
+  width: 59%;
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .app-promotion-image-container {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.app-promotion-image {
+  aspect-ratio: 1.11;
+  object-fit: contain;
+  width: 100%;
+  margin-top: -38px;
+  flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+  .app-promotion-image {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}

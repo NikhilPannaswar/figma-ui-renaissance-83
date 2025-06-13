@@ -1,0 +1,219 @@
+
+.team {
+  align-self: center;
+  display: flex;
+  width: 100%;
+  max-width: 1416px;
+  flex-direction: column;
+  align-items: stretch;
+  margin-left: 12px;
+  padding: 0 16px;
+}
+
+@media (max-width: 768px) {
+  .team {
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
+
+.team-header {
+  margin-left: 17px;
+  margin-top: 90px;
+}
+
+@media (max-width: 768px) {
+  .team-header {
+    margin-left: 0;
+    margin-top: 40px;
+    text-align: center;
+  }
+}
+
+.team-title {
+  color: rgba(15, 46, 20, 1);
+  font-size: 64px;
+  font-weight: normal;
+  letter-spacing: -1.28px;
+}
+
+@media (max-width: 768px) {
+  .team-title {
+    font-size: 40px;
+  }
+}
+
+.team-grid {
+  width: 100%;
+  max-width: 1353px;
+  margin-top: 71px;
+}
+
+@media (max-width: 768px) {
+  .team-grid {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.team-container {
+  gap: 20px;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .team-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.team-member {
+  width: 33%;
+}
+
+@media (max-width: 768px) {
+  .team-member {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.member-content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: stretch;
+  font-size: 24px;
+  color: black;
+}
+
+.member-image {
+  aspect-ratio: 0.64;
+  object-fit: contain;
+  width: 100%;
+}
+
+.member-info {
+  align-self: center;
+  display: flex;
+  width: 296px;
+  max-width: 100%;
+  align-items: center;
+  gap: 96px;
+  justify-content: space-between;
+  margin-top: 21px;
+}
+
+@media (max-width: 768px) {
+  .member-info {
+    gap: 40px;
+  }
+}
+
+.member-name {
+  font-weight: normal;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.member-more-btn {
+  font-weight: 600;
+  letter-spacing: -0.48px;
+  align-self: stretch;
+  margin: auto 0;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.member-more-btn:hover {
+  color: rgba(15, 46, 22, 1);
+}
+
+.team-join-card {
+  width: 33%;
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .team-join-card {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+}
+
+.join-card-content {
+  background-color: rgba(15, 46, 20, 1);
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: stretch;
+  color: rgba(253, 255, 240, 1);
+  font-weight: 300;
+  margin: 0 auto;
+  padding: 30px 29px 48px;
+  border-radius: 16px;
+}
+
+@media (max-width: 768px) {
+  .join-card-content {
+    padding: 30px 20px 40px;
+  }
+}
+
+.join-card-subtitle {
+  font-size: 20px;
+  letter-spacing: -0.8px;
+}
+
+.join-card-title {
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: -0.52px;
+  margin-top: 17px;
+}
+
+.join-card-description {
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: -0.75px;
+  margin-top: 17px;
+}
+
+@media (max-width: 768px) {
+  .join-card-description {
+    margin-right: 9px;
+  }
+}
+
+.join-card-button {
+  background-color: rgba(218, 227, 207, 1);
+  min-height: 40px;
+  gap: 10px;
+  font-size: 16px;
+  color: rgba(15, 46, 20, 1);
+  font-weight: 600;
+  line-height: 40px;
+  flex-wrap: wrap;
+  margin-top: 228px;
+  padding: 0 22px 0 21px;
+  border-radius: 45px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .join-card-button {
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+}
+
+.join-card-button:hover {
+  background-color: rgba(208, 217, 197, 1);
+}
