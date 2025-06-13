@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 
 export const Contact: React.FC = () => {
@@ -51,7 +52,6 @@ export const Contact: React.FC = () => {
     e.preventDefault();
     if (validateForm()) {
       console.log('Form submitted:', formData);
-      // Handle form submission here
       alert('Thank you for your message! We will get back to you soon.');
       setFormData({ email: '', message: '' });
     }
@@ -66,52 +66,52 @@ export const Contact: React.FC = () => {
   ];
 
   return (
-    <section className="self-center flex w-full max-w-[1416px] flex-col items-stretch ml-3 max-md:max-w-full px-4" id="contact">
-      <div className="w-full mt-[209px] max-md:max-w-full max-md:mt-10">
-        <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
-          <div className="w-[69%] max-md:w-full max-md:ml-0">
+    <section className="self-center flex w-full max-w-[1416px] flex-col items-stretch ml-3 max-md:ml-0 max-md:max-w-full px-4" id="contact">
+      <div className="w-full mt-[209px] max-lg:mt-[120px] max-md:mt-[80px] max-md:max-w-full">
+        <div className="gap-5 flex max-lg:flex-col max-lg:items-stretch">
+          <div className="w-full lg:w-[69%] max-md:w-full max-md:ml-0">
             <div className="max-md:max-w-full max-md:mt-10">
               <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
-                <div className="w-6/12 max-md:w-full max-md:ml-0">
+                <div className="w-full md:w-6/12 max-md:w-full max-md:ml-0">
                   <img
                     src={galleryImages[0]}
                     className="aspect-[0.99] object-contain w-full grow mt-3.5 rounded-[50%] max-md:max-w-full max-md:mt-10"
                     alt="Yoga practice gallery image 1"
                   />
                 </div>
-                <div className="w-6/12 ml-5 max-md:w-full max-md:ml-0">
+                <div className="w-full md:w-6/12 md:ml-5 max-md:w-full max-md:ml-0">
                   <div className="w-full max-md:max-w-full max-md:mt-[34px]">
                     <div className="max-md:max-w-full">
-                      <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
-                        <div className="w-6/12 max-md:w-full max-md:ml-0">
+                      <div className="gap-5 flex max-sm:flex-col max-sm:items-stretch">
+                        <div className="w-full sm:w-6/12 max-sm:w-full max-sm:ml-0">
                           <img
                             src={galleryImages[1]}
-                            className="aspect-[1.04] object-contain w-[213px] shrink-0 max-w-full grow rounded-[50%] max-md:mt-[35px]"
+                            className="aspect-[1.04] object-contain w-full max-w-[213px] shrink-0 grow rounded-[50%] max-sm:mt-[35px]"
                             alt="Yoga practice gallery image 2"
                           />
                         </div>
-                        <div className="w-6/12 ml-5 max-md:w-full max-md:ml-0">
+                        <div className="w-full sm:w-6/12 sm:ml-5 max-sm:w-full max-sm:ml-0">
                           <img
                             src={galleryImages[2]}
-                            className="aspect-[1.03] object-contain w-[212px] shrink-0 max-w-full grow rounded-[50%] max-md:mt-[35px]"
+                            className="aspect-[1.03] object-contain w-full max-w-[212px] shrink-0 grow rounded-[50%] max-sm:mt-[35px]"
                             alt="Yoga practice gallery image 3"
                           />
                         </div>
                       </div>
                     </div>
                     <div className="mt-8 max-md:max-w-full">
-                      <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
-                        <div className="w-6/12 max-md:w-full max-md:ml-0">
+                      <div className="gap-5 flex max-sm:flex-col max-sm:items-stretch">
+                        <div className="w-full sm:w-6/12 max-sm:w-full max-sm:ml-0">
                           <img
                             src={galleryImages[3]}
-                            className="aspect-[1.03] object-contain w-[213px] shrink-0 max-w-full grow rounded-[50%] max-md:mt-[35px]"
+                            className="aspect-[1.03] object-contain w-full max-w-[213px] shrink-0 grow rounded-[50%] max-sm:mt-[35px]"
                             alt="Yoga practice gallery image 4"
                           />
                         </div>
-                        <div className="w-6/12 ml-5 max-md:w-full max-md:ml-0">
+                        <div className="w-full sm:w-6/12 sm:ml-5 max-sm:w-full max-sm:ml-0">
                           <img
                             src={galleryImages[4]}
-                            className="aspect-[1.03] object-contain w-[212px] shrink-0 max-w-full grow rounded-[50%] max-md:mt-[35px]"
+                            className="aspect-[1.03] object-contain w-full max-w-[212px] shrink-0 grow rounded-[50%] max-sm:mt-[35px]"
                             alt="Yoga practice gallery image 5"
                           />
                         </div>
@@ -122,17 +122,17 @@ export const Contact: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="w-[31%] ml-5 max-md:w-full max-md:ml-0">
-            <div className="min-h-[470px] w-full text-lg text-[rgba(15,46,20,1)] font-normal mt-3.5 max-md:mt-10">
-              <h2 className="text-[64px] leading-[0] max-md:text-[40px]">
+          <div className="w-full lg:w-[31%] lg:ml-5 max-md:w-full max-md:ml-0">
+            <div className="min-h-[470px] w-full text-lg max-md:text-base text-[rgba(15,46,20,1)] font-normal mt-3.5 max-md:mt-10">
+              <h2 className="text-[64px] max-lg:text-[48px] max-md:text-[36px] max-sm:text-[28px] leading-[0] max-md:text-center lg:text-left">
                 Get in touch
               </h2>
-              <p className="leading-7 mt-[38px]">
+              <p className="leading-7 max-md:leading-6 mt-[38px] max-md:mt-6 max-md:text-center lg:text-left">
                 I want to help you overcome all mental and physical hurdles in your everyday life. 6 Years ago, I was electrocuted with 277 volts.
               </p>
               
-              <form onSubmit={handleSubmit} className="mt-[38px]">
-                <div className="mb-[38px]">
+              <form onSubmit={handleSubmit} className="mt-[38px] max-md:mt-6">
+                <div className="mb-[38px] max-md:mb-6">
                   <label htmlFor="email" className="text-[rgba(16,35,37,1)] leading-[34px] block">
                     Email (required)
                   </label>
@@ -142,7 +142,7 @@ export const Contact: React.FC = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="w-full max-w-[389px] mt-2 p-2 bg-transparent border-b border-[rgba(16,35,37,1)] focus:outline-none focus:border-[rgba(15,46,22,1)] transition-colors"
+                    className="w-full mt-2 p-2 bg-transparent border-b border-[rgba(16,35,37,1)] focus:outline-none focus:border-[rgba(15,46,22,1)] transition-colors"
                     aria-describedby={errors.email ? "email-error" : undefined}
                   />
                   {errors.email && (
@@ -152,7 +152,7 @@ export const Contact: React.FC = () => {
                   )}
                 </div>
                 
-                <div className="mb-[38px]">
+                <div className="mb-[38px] max-md:mb-6">
                   <label htmlFor="message" className="text-[rgba(16,35,37,1)] leading-[34px] block">
                     Message (required)
                   </label>
@@ -162,7 +162,7 @@ export const Contact: React.FC = () => {
                     value={formData.message}
                     onChange={handleInputChange}
                     rows={4}
-                    className="w-full max-w-[389px] mt-2 p-2 bg-transparent border-b border-[rgba(16,35,37,1)] focus:outline-none focus:border-[rgba(15,46,22,1)] transition-colors resize-vertical"
+                    className="w-full mt-2 p-2 bg-transparent border-b border-[rgba(16,35,37,1)] focus:outline-none focus:border-[rgba(15,46,22,1)] transition-colors resize-vertical"
                     aria-describedby={errors.message ? "message-error" : undefined}
                   />
                   {errors.message && (
@@ -174,7 +174,7 @@ export const Contact: React.FC = () => {
                 
                 <button
                   type="submit"
-                  className="bg-[rgba(15,46,22,1)] min-h-[60px] w-[180px] max-w-full gap-2.5 text-[22px] text-white font-semibold whitespace-nowrap leading-10 px-[39px] py-2.5 rounded-[45px] max-md:px-5 hover:bg-[rgba(25,56,32,1)] transition-colors focus:outline-none focus:ring-2 focus:ring-[rgba(15,46,22,1)] focus:ring-offset-2"
+                  className="bg-[rgba(15,46,22,1)] min-h-[60px] max-md:min-h-[50px] w-full max-w-[180px] max-md:max-w-full gap-2.5 text-[22px] max-md:text-[18px] text-white font-semibold whitespace-nowrap leading-10 px-[39px] max-md:px-6 py-2.5 rounded-[45px] hover:bg-[rgba(25,56,32,1)] transition-colors focus:outline-none focus:ring-2 focus:ring-[rgba(15,46,22,1)] focus:ring-offset-2"
                 >
                   Send
                 </button>

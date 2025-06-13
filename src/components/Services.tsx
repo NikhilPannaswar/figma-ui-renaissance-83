@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 export const Services: React.FC = () => {
@@ -20,34 +21,34 @@ export const Services: React.FC = () => {
   ];
 
   return (
-    <section className="self-center flex w-full max-w-[1416px] flex-col items-stretch ml-3 mt-[151px] max-md:max-w-full max-md:mt-10 px-4">
+    <section className="self-center flex w-full max-w-[1416px] flex-col items-stretch ml-3 max-md:ml-0 mt-[151px] max-lg:mt-[100px] max-md:mt-[60px] max-md:max-w-full px-4">
       <header>
-        <h2 className="text-[rgba(15,46,20,1)] text-[64px] font-normal ml-[26px] max-md:text-[40px] max-md:ml-2.5">
+        <h2 className="text-[rgba(15,46,20,1)] text-[64px] max-lg:text-[48px] max-md:text-[36px] max-sm:text-[28px] font-normal ml-[26px] max-md:ml-0 max-md:text-center">
           Our Services
         </h2>
-        <p className="text-[rgba(15,46,20,1)] text-xl font-normal w-[531px] ml-[26px] mt-[11px] max-md:max-w-full">
+        <p className="text-[rgba(15,46,20,1)] text-xl max-md:text-lg font-normal w-full max-w-[531px] ml-[26px] max-md:ml-0 mt-[11px] max-md:max-w-full">
           Whether you're a beginner or an advanced practitioner, our offerings are designed to inspire and support you on your wellness journey.
         </p>
       </header>
       
-      <div className="self-center w-full max-w-[1350px] mt-[111px] max-md:max-w-full max-md:mt-10">
-        <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
+      <div className="self-center w-full max-w-[1350px] mt-[111px] max-lg:mt-[70px] max-md:mt-[50px] max-md:max-w-full">
+        <div className="gap-5 flex max-lg:flex-col max-lg:items-stretch">
           {services.map((service, index) => (
-            <article key={index} className="w-[33%] max-md:w-full max-md:ml-0">
-              <div className="flex flex-col text-black font-normal max-md:mt-10">
+            <article key={index} className="w-full lg:w-[33%] max-md:w-full max-md:ml-0">
+              <div className="flex flex-col text-black font-normal max-md:mt-10 max-lg:items-center max-lg:text-center lg:items-start lg:text-left">
                 {service.isPlaceholder ? (
-                  <div className="flex w-[87px] shrink-0 h-[91px] rounded-xl border-[rgba(15,46,20,1)] border-solid border-[3px]" />
+                  <div className="flex w-[87px] shrink-0 h-[91px] rounded-xl border-[rgba(15,46,20,1)] border-solid border-[3px] max-lg:mx-auto" />
                 ) : (
                   <img
                     src={service.icon}
-                    className={index === 0 ? "aspect-[1.09] object-contain w-[97px]" : "aspect-[1.13] object-contain w-[85px]"}
+                    className={`${index === 0 ? "aspect-[1.09] object-contain w-[97px]" : "aspect-[1.13] object-contain w-[85px]"} max-lg:mx-auto`}
                     alt={`${service.title} icon`}
                   />
                 )}
-                <h3 className="text-[32px] leading-none tracking-[-1px] mt-[18px]">
+                <h3 className="text-[32px] max-lg:text-[28px] max-md:text-[24px] leading-none tracking-[-1px] mt-[18px] max-md:mt-4">
                   {service.title}
                 </h3>
-                <p className="text-base leading-[25px] self-stretch z-10 mt-[9px] max-md:mr-[-17px]">
+                <p className="text-base max-md:text-sm leading-[25px] max-md:leading-[22px] self-stretch z-10 mt-[9px] max-md:mt-2">
                   {service.description}
                 </p>
               </div>
